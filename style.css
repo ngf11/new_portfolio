@@ -1,0 +1,72 @@
+:root {
+  --background-color: #2e2a2a;
+  --font-color: #fffffc;
+  --font-fam: "Roboto Mono", monospace;
+}
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  margin: 0rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+P {
+  color: var(--font-color);
+  font-size: 8vw;
+  font-family: var(--font-fam);
+  margin: 0rem;
+  text-transform: uppercase;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main:has(.cool:hover) .word:not(.cool:hover) {
+  opacity: 0.2;
+  transition: transform 2000ms ease;
+}
+
+.cool > .play {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+.cool:hover > .play {
+  transition-duration: 800ms;
+}
+
+.cool:hover > .play:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.cool:hover > .play:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.cool:hover > .play:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.cool:hover > .play:nth-child(4) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.cool:hover > .play:nth-child(5) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.cool:hover > .play:nth-child(6) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.cool:hover > .play:nth-child(7) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
