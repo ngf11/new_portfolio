@@ -34,3 +34,30 @@ closeModals.forEach((element) => {
     });
   });
 });
+
+//cursor
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+window.addEventListener("mouseover", (e) => {
+  const positionX = e.clientX;
+  const positionY = e.clientY;
+
+  cursorDot.style.left = `${positionX}px`;
+  cursorDot.style.top = `${positionY}px`;
+
+  //   cursorOutline.style.left = `${positionX}px`;
+  //   cursorOutline.style.top = `${positionY}px`;
+
+  cursorOutline.animate(
+    {
+      left: `${positionX}px`,
+      top: `${positionY}px`,
+    },
+    {
+      duration: 800,
+      fill: "forwards",
+    }
+  );
+});

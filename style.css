@@ -10,6 +10,8 @@ body {
   overflow: hidden;
   display: grid;
   place-items: center;
+
+  cursor: none;
 }
 
 P {
@@ -78,4 +80,37 @@ a {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: var(--font-fam);
+}
+
+.close-modal {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: var(--font-fam);
+  border: none;
+  font-size: 2rem;
+}
+
+/* cursor */
+
+.cursor-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--font-color);
+}
+
+.cursor-outline {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
