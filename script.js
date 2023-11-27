@@ -1,3 +1,30 @@
+//cursor
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+window.addEventListener("mousemove", (e) => {
+  const positionX = e.clientX;
+  const positionY = e.clientY;
+
+  cursorDot.style.left = `${positionX}px`;
+  cursorDot.style.top = `${positionY}px`;
+
+  //   cursorOutline.style.left = `${positionX}px`;
+  //   cursorOutline.style.top = `${positionY}px`;
+
+  cursorOutline.animate(
+    {
+      left: `${positionX}px`,
+      top: `${positionY}px`,
+    },
+    {
+      duration: 1000,
+      fill: "forwards",
+    }
+  );
+});
+
 //Spliting links into spans and adding className
 const enhance = (id) => {
   const element = document.getElementById(id),
@@ -33,31 +60,4 @@ closeModals.forEach((element) => {
       modalElement.close();
     });
   });
-});
-
-//cursor
-
-const cursorDot = document.querySelector(".cursor-dot");
-const cursorOutline = document.querySelector(".cursor-outline");
-
-window.addEventListener("mousemove", (e) => {
-  const positionX = e.clientX;
-  const positionY = e.clientY;
-
-  cursorDot.style.left = `${positionX}px`;
-  cursorDot.style.top = `${positionY}px`;
-
-  //   cursorOutline.style.left = `${positionX}px`;
-  //   cursorOutline.style.top = `${positionY}px`;
-
-  cursorOutline.animate(
-    {
-      left: `${positionX}px`,
-      top: `${positionY}px`,
-    },
-    {
-      duration: 1000,
-      fill: "forwards",
-    }
-  );
 });
