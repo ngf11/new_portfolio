@@ -25,9 +25,35 @@
         <p class="word">Developer</p>
       </div>
       <div class="line">
-        <p id="work" class="word cool">Work</p>
-        <p id="about" class="word cool">About</p>
-        <p id="contact" class="word cool">Contact</p>
+        <p data-modal id="work" class="word cool">Work</p>
+        <dialog class="modal my-work">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close-modal">X</button>
+            </div>
+            <div class="modal-display"></div>
+          </div>
+        </dialog>
+
+        <p data-modal id="about" class="word cool">About</p>
+        <dialog class="modal about-me">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close-modal">X</button>
+            </div>
+            <div class="modal-display"></div>
+          </div>
+        </dialog>
+
+        <p data-modal id="contact" class="word cool">Contact</p>
+        <dialog class="modal contact">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close-modal">X</button>
+            </div>
+            <div class="modal-display"></div>
+          </div>
+        </dialog>
       </div>
     </div>
     <script src="./script.js"></script>
