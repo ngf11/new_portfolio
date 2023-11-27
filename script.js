@@ -40,7 +40,7 @@ closeModals.forEach((element) => {
 const cursorDot = document.querySelector(".cursor-dot");
 const cursorOutline = document.querySelector(".cursor-outline");
 
-window.addEventListener("mouseover", (e) => {
+window.addEventListener("mousemove", (e) => {
   const positionX = e.clientX;
   const positionY = e.clientY;
 
@@ -56,7 +56,7 @@ window.addEventListener("mouseover", (e) => {
       top: `${positionY}px`,
     },
     {
-      duration: 800,
+      duration: 1000,
       fill: "forwards",
     }
   );
