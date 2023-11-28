@@ -101,6 +101,28 @@ dialog::backdrop {
   color: rgba(214, 19, 19, 0.856);
   border: none;
 }
+/* Work Moda */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.headerBnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.headerTitel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* cursor */
 
 .cursor-dot {
