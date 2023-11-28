@@ -1,21 +1,9 @@
 
---fix modals seems to be reapeating 
+-- work felx direction- add div for 3D and website work work start with 3 clickable images hover opacity(tech used in project)
+
+-- about me add image of myself feix direction
+-- contact look at email box.icons with social on the right felx-row
+
 --fix text effect for cellphone
 
 
-
-openModal.forEach((element) => {
-  element.addEventListener("click", () => {
-    modal.forEach((modalElement) => {
-      modalElement.showModal();
-    });
-  });
-});
-
-closeModals.forEach((element) => {
-  element.addEventListener("click", () => {
-    modal.forEach((modalElement) => {
-      modalElement.close();
-    });
-  });
-});
