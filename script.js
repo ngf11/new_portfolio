@@ -42,9 +42,6 @@ enhance("about");
 enhance("contact");
 
 // Modals functionality
-const openModal = document.querySelectorAll("[data-modal]");
-const modal = document.querySelectorAll(".modal");
-const closeModals = document.querySelectorAll(".close-modal");
 
 //Work
 const openWork = document.querySelector("[data-work-modal]");
@@ -57,4 +54,17 @@ openWork.addEventListener("click", () => {
 
 workClose.addEventListener("click", () => {
   workModal.close();
+});
+
+// About Me
+const openAbout = document.querySelector("[data-about-modal]");
+const aboutModal = document.querySelector(".about-me");
+const closeAbout = document.querySelector(".close-about-modal");
+
+openAbout.addEventListener("click", () => {
+  aboutModal.showModal();
+});
+
+closeAbout.addEventListener("click", () => {
+  aboutModal.close();
 });
