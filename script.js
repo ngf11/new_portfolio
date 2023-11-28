@@ -46,18 +46,15 @@ const openModal = document.querySelectorAll("[data-modal]");
 const modal = document.querySelectorAll(".modal");
 const closeModals = document.querySelectorAll(".close-modal");
 
-openModal.forEach((element) => {
-  element.addEventListener("click", () => {
-    modal.forEach((modalElement) => {
-      modalElement.showModal();
-    });
-  });
+//Work
+const openWork = document.querySelector("[data-work-modal]");
+const workModal = document.querySelector(".my-work");
+const workClose = document.querySelector(".close-work-modal");
+
+openWork.addEventListener("click", () => {
+  workModal.showModal();
 });
 
-closeModals.forEach((element) => {
-  element.addEventListener("click", () => {
-    modal.forEach((modalElement) => {
-      modalElement.close();
-    });
-  });
+workClose.addEventListener("click", () => {
+  workModal.close();
 });

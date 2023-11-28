@@ -1,1 +1,21 @@
+
+--fix modals seems to be reapeating 
 --fix text effect for cellphone
+
+
+
+openModal.forEach((element) => {
+  element.addEventListener("click", () => {
+    modal.forEach((modalElement) => {
+      modalElement.showModal();
+    });
+  });
+});
+
+closeModals.forEach((element) => {
+  element.addEventListener("click", () => {
+    modal.forEach((modalElement) => {
+      modalElement.close();
+    });
+  });
+});

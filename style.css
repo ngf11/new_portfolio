@@ -83,14 +83,20 @@ a {
   font-family: var(--font-fam);
 }
 
-.close-modal {
+.bnt {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: var(--font-fam);
   border: none;
+  padding: 0.25rem 0.75rem;
   font-size: 2rem;
 }
 
+.bnt:hover {
+  transform: rotateY(180);
+  color: rgba(214, 19, 19, 0.856);
+  border: none;
+}
 /* cursor */
 
 .cursor-dot {
