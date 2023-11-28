@@ -68,3 +68,16 @@ openAbout.addEventListener("click", () => {
 closeAbout.addEventListener("click", () => {
   aboutModal.close();
 });
+
+//Contact
+const openContact = document.querySelector("[data-contact-modal]");
+const contactModal = document.querySelector(".contact");
+const closeContact = document.querySelector(".close-contact-modal");
+
+openContact.addEventListener("click", () => {
+  contactModal.showModal();
+});
+
+closeContact.addEventListener("click", () => {
+  contactModal.close();
+});
