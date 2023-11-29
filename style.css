@@ -109,6 +109,10 @@ dialog::backdrop {
 .modal-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+.headerTitel {
+  padding: 1rem;
 }
 
 .modal-header {
@@ -125,6 +129,24 @@ dialog::backdrop {
 }
 /* Work Moda */
 
+/* About me Modal */
+.aboutMeContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutMeContent,
+.modalFont {
+  font-size: 1.75ch;
+  padding: 1rem;
+}
+.about-pic {
+  height: 20rem;
+  width: 15rem;
+  border: 1px solid var(--font-color);
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
 /* cursor */
 
 .cursor-dot {
