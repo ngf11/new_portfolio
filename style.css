@@ -145,7 +145,6 @@ dialog::backdrop {
   width: 15rem;
   border: 1px solid var(--font-color);
   border-radius: 0.2rem;
-  padding: 1rem;
 }
 /* cursor */
 
