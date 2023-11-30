@@ -81,3 +81,8 @@ openContact.addEventListener("click", () => {
 closeContact.addEventListener("click", () => {
   contactModal.close();
 });
+function sendMail() {
+  const parlams = {
+    name: document.getElementById("name").value,
+  };
+}

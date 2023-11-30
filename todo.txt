@@ -2,7 +2,7 @@
 -- work felx direction- add div for 3D and website work work start with 3 clickable images hover opacity(tech used in project)
 
 -- about me add image of myself feix direction
--- contact look at email box.icons with social on the right felx-row
+-- contact look at email box.
 -- drop down menu that opens modals
 --fix text effect for cellphone
 

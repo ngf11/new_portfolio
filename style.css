@@ -148,6 +148,9 @@ dialog::backdrop {
 }
 
 /* contact Modal */
+.contact-font {
+  font-size: 1.75ch;
+}
 .linked {
   color: var(--font-color);
 }
