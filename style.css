@@ -127,7 +127,7 @@ dialog::backdrop {
   flex: 1;
   justify-content: flex-start;
 }
-/* Work Moda */
+/* Work Modal */
 
 /* About me Modal */
 .aboutMeContent {
@@ -146,6 +146,9 @@ dialog::backdrop {
   border: 1px solid var(--font-color);
   border-radius: 0.2rem;
 }
+
+/* contact Modal */
+
 /* cursor */
 
 .cursor-dot {
