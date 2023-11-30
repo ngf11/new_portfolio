@@ -148,7 +148,9 @@ dialog::backdrop {
 }
 
 /* contact Modal */
-
+.linked {
+  color: var(--font-color);
+}
 /* cursor */
 
 .cursor-dot {

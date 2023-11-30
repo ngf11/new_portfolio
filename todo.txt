@@ -3,7 +3,7 @@
 
 -- about me add image of myself feix direction
 -- contact look at email box.icons with social on the right felx-row
-
+-- drop down menu that opens modals
 --fix text effect for cellphone
 
 
