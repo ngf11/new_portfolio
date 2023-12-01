@@ -87,21 +87,19 @@ function sendMail() {
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
-  return { parlams };
+  const serviceID = "service_8n2ufnv";
+  const templateID = "template_02qvfus";
+
+  emailjs
+    .send(serviceID, templateID, parlams)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("sent");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
-
-const serviceID = "service_8n2ufnv";
-const templateID = "template_02qvfus";
-
-emailjs
-  .send(serviceID, templateID, parlams)
-  .then((res) => {
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-    console.log(res);
-    alert("sent");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
