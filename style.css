@@ -154,6 +154,35 @@ dialog::backdrop {
 .linked {
   color: var(--font-color);
 }
+
+.contactMe {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.form {
+  grid-column: 2/4;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+  grid-column: 5;
+}
+
+.form-group {
+  padding: 0.5rem;
+}
+.form-control {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: var(--font-fam);
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
 /* cursor */
 
 .cursor-dot {
