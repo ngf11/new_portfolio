@@ -103,3 +103,21 @@ function sendMail() {
       console.log(err);
     });
 }
+
+//modal drop down menues
+
+// Work DropDown
+
+const openWorkMenu = document.querySelector("[]");
+const workMenu = document.querySelector("[]");
+const workCloseMenu = document.querySelector("[]");
+
+openWorkMenu.addEventListener("click", () => {
+  workMenu.show();
+});
+
+workCloseMenu.addEventListener("click", () => {
+  workMenu.close();
+});
+
+// About me Menu

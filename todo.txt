@@ -7,3 +7,11 @@
 --fix text effect for cellphone
 
 
+        <p data-work-modal id="work" class="word cool">Work</p>
+
+
+--work--
+
+--about me--
+
+---contact--
