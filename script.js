@@ -105,25 +105,3 @@ function sendMail() {
 }
 
 //modal drop down menues
-
-// Work DropDown
-
-const openWorkMenu = document.querySelector("[data-menu-work]");
-const workMenu = document.querySelector("[data-open-menu]");
-// const workCloseMenu = document.querySelector("[]");
-
-openWorkMenu.addEventListener("click", () => {
-  workMenu.show();
-});
-
-workMenu.addEventListener("click", (e) => {
-  const dialogDimensions = workMenu.getBoundingClientRect();
-  if (
-    e.clientX < dialogDimensions.left ||
-    e.clientX > dialogDimensions.right ||
-    e.clientY < dialogDimensions.top ||
-    e.clientY > dialogDimensions.buttom
-  ) {
-    workMenu.close();
-  }
-});

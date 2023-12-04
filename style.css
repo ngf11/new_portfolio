@@ -126,14 +126,6 @@ dialog::backdrop {
   display: flex;
   flex-direction: row;
   flex: 1;
-  justify-content: space-between;
-}
-.menu-drop {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: var(--background-color);
-  color: var(--font-color);
 }
 
 /* Work Modal */

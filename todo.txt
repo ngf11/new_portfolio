@@ -2,16 +2,7 @@
 -- work felx direction- add div for 3D and website work work start with 3 clickable images hover opacity(tech used in project)
 
 -- about me add image of myself feix direction
--- contact look at email box.
--- drop down menu that opens modals
+-- drop down/ or links  menu in each modal that opens the other  modals
 --fix text effect for cellphone
 
-
-        <p data-work-modal id="work" class="word cool">Work</p>
-
-
---work--
-
---about me--
-
----contact--
+ 
